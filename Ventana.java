@@ -17,8 +17,15 @@ public class Ventana{
 		JTextField passtext=new JTextField("");
 		JTextArea commentstext=new JTextArea("");
 
+		//Asignando tamaño a los JTextFields
+		usertext.setPreferredSize(new Dimension(200,24));
+		passtext.setPreferredSize(new Dimension(200,24));
+
+		//Asignando posicion de los objetos
+		user.setBounds(0,0);
+
 		//Asignando formato a la ventana
-		ventana.setLayout(new GridLayout());
+		ventana.setLayout(new FlowLayout());
 		ventana.add(user);
 		ventana.add(pass);
 		ventana.add(comments);
